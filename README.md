@@ -5,7 +5,7 @@ All you need to know for Python is here: [W3Schools](https://www.w3schools.com/p
 
 # Summary
 - [Intro](#intro)
-- [Encoding](#encoding)
+- [Cryptography](#cryptography)
 
 
 ### Intro
@@ -41,44 +41,40 @@ list(string.ascii_letters) + list(string.digits)
 
 <br></br>
 
-### Encoding
+### Cryptography
 
 
-To decode from binary to ASCII you can use
+To decode a text from binary to ASCII:
 ```
-result=''.join(chr(int(binary_string[i*8:i*8+8],2)) for i in range(len(binary_string)//8))
+def bin2ASCII(binary_string):
+    return ''.join(chr(int(binary_string[i*8:i*8+8],2)) for i in range(len(binary_string)//8))
 ```
 where `bin` is the variable assigned to the binary string.
 
 
 The `''.join()` is really common. It's better if we analyze the previous one to clarify:
   - `char()`: transform a letter from a unicode number to string
-  - `int()`: convert a string to an integer. Takes as arguments the string and the base
+  - `int()`: convert a string in binary formato to integer. Takes as arguments the string and the base
   - `//` floor division
 
 
 
 <br></br>
-To decode from base64 to ASCII you can use
+To decode a text from base64 to ASCII:
 
 ```
 import base64
-decoded = base64.b64decode(encoded_string).decode('ascii')
+
+def b642ASCII(encoded_string):
+    return base64.b64decode(encoded_string).decode('ascii')
 ```
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<br></br>
+To brute force a caesar cipher:
+```
+def brute_force_caesar(text):
+    for i in range(-30,30):
+        return ''.join([chr(ord(c) + i) for c in text])
+```
