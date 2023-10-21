@@ -44,7 +44,7 @@ list(string.ascii_letters) + list(string.digits)
 ### Cryptography
 
 
-To decode a text from binary to ASCII:
+To decode a text from binary to string:
 ```
 def bin2ASCII(binary_string):
     return ''.join(chr(int(binary_string[i*8:i*8+8],2)) for i in range(len(binary_string)//8))
@@ -60,13 +60,13 @@ The `''.join()` is really common. It's better if we analyze the previous one to 
 
 
 <br></br>
-To decode a text from base64 to ASCII:
+To decode a text from base64 to string:
 
 ```
 import base64
 
-def b642ASCII(encoded_string):
-    return base64.b64decode(encoded_string).decode('ascii')
+def base64tostring(text):
+    return base64.b64decode(text).decode('utf-8', errors="ignore")
 ```
 
 
@@ -77,4 +77,27 @@ To brute force a caesar cipher:
 def brute_force_caesar(text):
     for i in range(-30,30):
         return ''.join([chr(ord(c) + i) for c in text])
+```
+
+<br></br>
+To xor two strings:
+```
+def xor(x,y):
+    return ''.join([chr(ord(a)^ord(b)) for a,b in zip(x,y)]
+```
+
+
+<br></br>
+To convert from hex to decimal format:
+```
+def hex2dec(text):
+    res = []
+    for i in range(len(text)//2):
+        #get the current pair of hex
+        curr = text[i*2:(i+1)*2]
+
+        #convert to int
+        res.append(int(curr, 16))
+
+    return res
 ```
