@@ -1,23 +1,11 @@
-# Ajax Not Soap
+# Solution
 
-## Description
-Javascript is checking the login password off of an ajax call, The verification is being done on the client side.
-making a direct call to the ajax page will return the expected password
+Check the javascript code. There are two main functions, one that checks the username, and one that checks the password. The correct pairs of username-passwords are retrieved using a “webhooks” ajax function.
 
-RULES = you don't have access to the 'web' folder.
+Well, since this is a client-side control, we can use the browser debugger and set two
+breakpoints on the lines that clean the data variable (i.e., data = data.replace([...])).
 
-Be sure that the the entire folder has the right permissions.
-To do it, open the terminal and write
-    chmod -R +rx ./
+We can do the same thing for the password and the flag will appear:
 
-REMEMBER: do this operation for every exercise.
 
-To execute the exercise, do the following on the terminal
-
-  sudo ./docker_build.sh
-
-and then
-
-  sudo ./docker_run.sh
-
-Check inside docker_run the ip:port to use (in this case 127.0.0.1:8085)
+<p align="center"> Flag = flag{hj38dsjk324nkeasd9} </p>
