@@ -6,6 +6,7 @@ All you need to know for Python is here: [W3Schools](https://www.w3schools.com/p
 # Summary
 - [Intro](#intro)
 - [Cryptography](#cryptography)
+- [WebSecurity](#websecurity)
 
 
 ### Intro
@@ -79,6 +80,30 @@ def brute_force_caesar(text):
         return ''.join([chr(ord(c) + i) for c in text])
 ```
 
+
+<br></br>
+To solve a vigenere chipere :
+```
+shift = []
+
+for i in range(len(key)):
+    shift.append(ord(key[i]) - 97 )
+
+sol = ''
+
+for i in range(len(cipher)):
+    ascii_number = ord(cipher[i]) - shift[i%len(key)]
+    
+    if ascii_number >= ord('a'):
+        sol += chr(ascii_number)
+    else:
+        diff = ord('a') - ascii_number - 1
+        sol += chr(ord('z') - diff)
+        
+print(sol)
+```
+
+
 <br></br>
 The `zip()` function takes iterables (can be zero or more), aggregates them in a tuple, and returns it.
 ```
@@ -114,3 +139,16 @@ def hex2dec(text):
 
     return res
 ```
+
+### WebSecurity 
+
+Just some tips for every web challenge:
+    - check page source
+    - check cookies
+    - check if you can use some functions
+    - change permission from 'user' to 'admin'
+    - use js-obfuscation if needed
+    - use breakpoints
+    - sql injection (' or 1=1 --)
+    - use php tester
+
