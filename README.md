@@ -145,6 +145,7 @@ def hex2dec(text):
 ### WebSecurity 
 
 Just some tips for every web challenge:
+
     - check page source
     - check cookies
     - check if you can use some functions
