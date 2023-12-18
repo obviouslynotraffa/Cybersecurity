@@ -1,0 +1,9 @@
+Our goal is to capture the flag, which is given
+on line 12, inside the function print_flag.
+
+Since in the 'main' execution flow there is no call to
+that specific function, we need to manipulate the main's execution.
+
+What are the weak points of this program?
+You need to focus on line 17 (msg array definition)
+and line 21 (user-application interaction).

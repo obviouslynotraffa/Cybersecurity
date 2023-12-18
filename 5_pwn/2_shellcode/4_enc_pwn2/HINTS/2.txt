@@ -1,0 +1,25 @@
+STEP 2: ROP definition
+
+ok, we want to control the flow in order to load a shell.
+we need to analyze in deep our target function, which is 'lol'.
+
+  gdb-peda$ disas lol
+      Dump of assembler code for function lol:
+      0x08048541 <+0>:	push   ebp
+      0x08048542 <+1>:	mov    ebp,esp
+      0x08048544 <+3>:	jmp    esp
+      0x08048546 <+5>:	pop    ebp
+      0x08048547 <+6>:	ret
+  End of assembler dump.
+
+what we are doing is loading ebp to the esp (from
+stack base pointer to stack pointer).
+
+we thus need to place our shell code to ebp.
+
+
+We need now to define a massage like:
+(?) buffer overflow bytes
+(4) overwrite the return address and place the
+   'lol' address instead
+(4) place our bashcode inside

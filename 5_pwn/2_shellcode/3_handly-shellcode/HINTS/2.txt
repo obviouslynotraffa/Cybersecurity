@@ -1,0 +1,15 @@
+You might notice some issues with the manual insertion
+of the string.
+
+What we suggest is to use pwntool as follows:
+
+from pwn import *
+
+p = process('./vuln')
+msg = 'here put your message'
+p.sendline(msg)
+p.interactive()
+
+
+
+At this point you should be able to execute bash commands.

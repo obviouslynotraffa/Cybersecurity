@@ -1,0 +1,8 @@
+STEP 1: PROBLEM DEFINITION
+
+GOAL: Our target is to run the function 'shell',
+which opens a shell and thus we can access to the
+file that contains the flag
+
+TARGET: the entering point is defined on line 12,
+where a 'gets' fill the variable with 128 bytes.

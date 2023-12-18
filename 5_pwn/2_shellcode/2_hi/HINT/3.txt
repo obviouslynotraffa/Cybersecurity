@@ -1,0 +1,17 @@
+pwntools is the perfect library for not loosing time.
+
+What we can do is to send lines and see the response of
+the program.
+
+for example, give the following code,
+
+  p = process('./hi')
+  msg = 'a' * 10 + str(p64(elf.symbols['print_flag']))
+  p.sendline(msg)
+  print p.recvall()
+
+we can create a message that contains 'aaaaaaaaaa' plus
+the target address.
+In order to conclude the exercise, you need to understand the
+right amount of bytes required for filling the buffer and
+overwrite the register that contains the returning address (%rip).

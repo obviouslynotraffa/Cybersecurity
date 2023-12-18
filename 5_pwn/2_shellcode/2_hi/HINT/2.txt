@@ -1,0 +1,28 @@
+We know that an overhead of 18 bytes can be inserted
+in line 21.
+
+We should try to control the flow of the program's execution,
+e.g., by replacing the returning address of the main function
+in line 25 with the address of print_flag.
+
+There are several ways in order to get the address of print_flag,
+for example by using a python library:
+
+--------------------------------------
+#   pip2 install pwntools
+from pwn import *
+
+#this function allows us to interact with the application
+# and to retrieve useful information
+elf = ELF('./hi')
+
+#print the addresses
+print 'main address:\t', hex(elf.symbols['main'])
+print 'print_flag address:\t', hex(elf.symbols['print_flag'])
+------------------------------------------------------
+
+or with the following bash command:
+  objdump -d hi
+
+p.s. : in order to execute this program you need to be
+in the same folder of the executable program 'hi'.

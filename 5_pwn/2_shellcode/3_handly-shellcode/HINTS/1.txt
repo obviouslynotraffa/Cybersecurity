@@ -1,0 +1,9 @@
+You need to find a proper input that allow you 
+to open a shell in the terminal.
+
+Authors suggested a website, so first find a proper
+file according to your architecture.
+
+There is a huge list with tons of possibilities.
+For example, you can search with 'bash' and 'execve'.
+
