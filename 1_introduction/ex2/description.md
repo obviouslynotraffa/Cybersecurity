@@ -1,3 +1,5 @@
+# Description
+
 Define a simple calculator.
 The user uses the terminal and it has three variables.
 - input1: first integer number
