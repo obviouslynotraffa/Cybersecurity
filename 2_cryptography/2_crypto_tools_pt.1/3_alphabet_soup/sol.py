@@ -3,10 +3,6 @@ from collections import Counter
 with open('encrpyted.txt') as file:
     data = file.read()
     
-print(data)    
-
-
-print(Counter(data),"\n")    
 
 # K is alone, could be 'I'
 voc = {'K': 'i'}

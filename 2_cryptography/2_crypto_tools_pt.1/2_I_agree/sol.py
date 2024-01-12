@@ -8,8 +8,6 @@ shift = []
 for i in range(len(key)):
     shift.append(ord(key[i]) - 97 )
 
-#print(shift) [2, 0, 4, 18, 0, 17]
-
 
 sol = ''
 

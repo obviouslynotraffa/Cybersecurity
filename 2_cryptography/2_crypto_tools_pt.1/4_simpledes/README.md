@@ -1,3 +1,4 @@
+# Description
 Larry is working on an encryption algorithm based on DES.
 
 He hasn't worked out all the kinks yet, but he thinks it works.
@@ -37,3 +38,8 @@ He has encryped a message using Key="Mu", and R=2. See if you can decipher it in
 Submit your result to Larry in the format Gigem{plaintext}.
 
 Binary of ciphertext: 01100101 00100010 10001100 01011000 00010001 10000101
+
+## Flag
+```plain
+Min0n!
+```
