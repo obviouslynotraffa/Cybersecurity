@@ -80,5 +80,3 @@ for i, c in enumerate(secret):
     real_message+= chr(c ^ real_key[key_pos])
 
 print(real_message)
-
-#your flag is: 8eb31c92334eac8f6dacfbaaa5e40294a31e66e0

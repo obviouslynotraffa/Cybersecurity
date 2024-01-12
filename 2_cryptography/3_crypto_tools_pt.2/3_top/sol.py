@@ -65,6 +65,3 @@ random.seed(plain_time.encode("ASCII"))
 keys_secret = [random.randrange(256) for _ in secret[:-len(cur_time)]]
 plain_text = ''.join([chr(m ^ k) for (m, k) in zip(secret[:-len(cur_time)], keys_secret)])
 print(plain_text)
-
-#flag reached
-# Here is your flag: 34C3_otp_top_pto_pot_tpo_opt_wh0_car3s

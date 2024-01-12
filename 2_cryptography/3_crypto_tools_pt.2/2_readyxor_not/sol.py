@@ -18,8 +18,8 @@ enc_flag = base64tostring(encrypted_flag)
 
 #apply the xor to obtain the key
 key = ''.join([chr(ord(x) ^ ord(y))for x, y in zip(original_data, enc_data)])
-print(key)
 
+#print(key)
 #seems a good key
 
 #xor the key and the encrypted flag
