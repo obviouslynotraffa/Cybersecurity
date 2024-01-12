@@ -1,3 +1,12 @@
+# Description
+We sniffed a sensible http traffic.
+Can you identify the password?
+The attacked service is called bashNinja.
+
+
+Hint. Use Wireshark.
+
+## Solution
 The hint suggest the usage of Wireshark.
 
 We first filter the packets by http (see the bar with "App a display filter").
@@ -9,7 +18,8 @@ One of these contain has been accepted (see its following packet).
 By inspecting the "Hypertext transfer protocol", we can notice the Authorization
 field. Here it contains our flag inside the credentials:
 
-Flag: "bashNinja:flag{help-me-obiwan}"
 
-
-Not a good idea to transfer credentials in clear.
+### Flag
+```plain
+bashNinja:flag{help-me-obiwan}
+```

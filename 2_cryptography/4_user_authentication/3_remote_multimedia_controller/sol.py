@@ -12,5 +12,3 @@ for i in range(1,11):
     print(dec)
     print('')
     secret = dec
-    
-#Good job ! You found the flag: INSA{TCP_s0ck3t_4n4lys1s_c4n_b3_fun!}

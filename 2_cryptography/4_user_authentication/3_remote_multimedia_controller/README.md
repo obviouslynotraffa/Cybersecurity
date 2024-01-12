@@ -1,3 +1,4 @@
+# Description
 Caasi Vosima organized a party last night to show is new high-tech house to his
 friends yet something went wrong with the multimedia player and the music was
 turned off.
@@ -7,3 +8,8 @@ moment. Caasi was able to recover some information collected just before the
 crash.
 
 Help Caasi to find out what happened !
+
+## Flag
+```plain
+INSA{TCP_s0ck3t_4n4lys1s_c4n_b3_fun!}
+```
