@@ -7,5 +7,7 @@ breakpoints on the lines that clean the data variable (i.e., data = data.replace
 
 We can do the same thing for the password and the flag will appear:
 
-
-<p align="center"> Flag = flag{hj38dsjk324nkeasd9} </p>
+## Flag
+```plain
+flag{hj38dsjk324nkeasd9}
+```

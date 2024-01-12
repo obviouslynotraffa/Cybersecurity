@@ -8,4 +8,7 @@ code in local and try to figure it out what it’s doing.
 Clearing the code we can see that the print uses the format “%(allowed_ip)s” for printing the value contained in
 the dictionary, so we can use that in the form and get the flag:
 
-<p align="center">INSA{Y0u_C@n_H@v3_fUN_W1Th_pYth0n}</p>
+## Flag
+```plain
+INSA{Y0u_C@n_H@v3_fUN_W1Th_pYth0n}
+```

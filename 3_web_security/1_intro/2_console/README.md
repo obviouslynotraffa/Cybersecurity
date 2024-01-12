@@ -9,5 +9,7 @@ otherwise `getThat(“N”)`.
 
 So in our browser we can go in the console section, call it and the flag will appear:
 
-
- <p align="center">Password: flag{console_control_js}</p>
+## Flag
+```plain
+flag{console_control_js}
+```

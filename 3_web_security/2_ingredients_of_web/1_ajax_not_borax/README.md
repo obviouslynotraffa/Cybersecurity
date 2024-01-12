@@ -8,4 +8,7 @@ We see that is coded from md5, so we can use an online tool for decode it.
 
 If we do the same thing for the pass we'll have the flag:
 
-<p align="center">"flag{sd90J0dnLKJ1ls9HJed}" </p>
+## Flag
+```plain
+flag{sd90J0dnLKJ1ls9HJed}
+```
