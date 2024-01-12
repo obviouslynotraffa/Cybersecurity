@@ -12,17 +12,13 @@ input = input.replace(' ', '') #remove additional spaces
 #remove the additional spaces
 input = input.strip()
 
-print(len(input))
-
 #since it is a multiple of 8, we can think that this is a series of
 #ascii characters
 result=''.join(chr(int(input[i*8:i*8+8],2)) for i in range(len(input)//8))
-print(result)
 
 #the last couple of characters are '==' ... it looks a base64
 import base64
 decoded = base64.b64decode(result).decode('ascii')
-print(decoded)
 
 #the output is a morse code
 alpha2morse = {'A': '.-',     'B': '-...',   'C': '-.-.',
