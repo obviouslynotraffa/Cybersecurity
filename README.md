@@ -23,5 +23,5 @@ The course covers various topics:
 
 - **Pwning** :
     - Shellcode
-    - PLTGOT
+    - PLT & GOT
     - ROP
