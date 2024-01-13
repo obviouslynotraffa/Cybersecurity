@@ -7,21 +7,21 @@ Each challenge is in `CTF` (caputre the flag) format, in which you will have to 
 ### 📚 Topics
 The course covers various topics:
 
-- `Cryptography`: 
+- **Cryptography** : 
     - Encoding
     - Crypto Tools
     - User Authentication
 
-- `Web Security`:
+- **Web Security** :
     - Ingredients of web
     - Language Vulnerabilities
     - Injection Attacks
 
-- `Reverse Engineering`:
+- **Reverse Engineering** :
     - Patching
     - Debug
 
-- `Pwning`:
+- **Pwning** :
     - Shellcode
     - PLTGOT
     - ROP
