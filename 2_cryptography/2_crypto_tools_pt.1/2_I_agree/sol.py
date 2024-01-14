@@ -1,5 +1,5 @@
 import base64
-
+# it's a Vigenère Cipher
 cipher = 'vhixoieemksktorywzvhxzijqni'
 key = 'caesar'
 

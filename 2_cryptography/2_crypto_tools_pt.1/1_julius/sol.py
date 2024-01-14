@@ -24,5 +24,3 @@ def brute_force_caesar(text):
 
 
 brute_force_caesar(decoded2)
-
-
