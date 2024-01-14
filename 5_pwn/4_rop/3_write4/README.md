@@ -1,4 +1,5 @@
-# Description
+# Write4
+### 📄 Description
 
 ### Cord cut
 Our favourite string "/bin/cat flag.txt" is not present this time. Although you'll see later that there are other ways around this problem, such as resolving dynamically loaded libraries and using the strings present in those, we'll stick to the challenge goal which is learning how to get data into the target process's virtual address space via the magic of ROP.
@@ -15,7 +16,7 @@ Perhaps the most important thing to consider in this challenge is where we're go
 ### Decisions, decisions
 Once you've figured out how to write your string into memory and where to write it, go ahead and call `print_file()` with its location as your only argument. 
 
-## Solution
+## 🔑 Solution
 The description tells us what to do. We hava a symbol called `usefulGadgets` that contains a trivial write-what-where. We can use `__libc_csu_init+96` in order to initialize the required registers (`r14` and `r15`). Last thing we miss is finding a place where we can write the required string flag.txt and read it back when calling `print_file`. A good candidate is the `.data` section of the ELF because it's both readable and writable.
 
 ```python
@@ -33,7 +34,7 @@ p.send(b"A" * 40 + r.chain())
 log.success(p.recvline_regex(rb".*{.*}.*").decode("ascii"))
 ```
 
-## Flag
+### 🚩 Flag
 ```plain
 ROPE{a_placeholder_32byte_flag!}
 ```

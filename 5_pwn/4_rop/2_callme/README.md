@@ -1,4 +1,6 @@
-# Description
+# Call me
+
+### 📄 Description 
 
 ### Failure is not an option
 
@@ -17,7 +19,7 @@ The solution here is simple enough, use your knowledge about what resides in the
 
 Don't get distracted by the incorrect calls to these functions made in the binary, they're there to ensure these functions get linked. You can also ignore the .dat files and encrypted flag in this challenge, they're there to ensure the functions must be called in the correct order.
 
-## Solution
+## 🔑 Solution
 We just need to call the three functions with the correct arguments and we get back the flag. Ez pz.
 
 ```python

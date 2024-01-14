@@ -1,7 +1,8 @@
-# Description
+# Pwn0
+### 📄 Description
 How is the Josh?
 
-## Solution
+## 🔑 Solution
 We see that is used `gets` to read the string. We can exploit this fact to overwrite the `josh` variable with the required string `H!gh`.
 
 ```python
@@ -15,7 +16,7 @@ log.success(p.recvline_regex(rb".*{.*}.*").decode("ascii"))
 ```
 
 
-## Flag
+### 🚩 Flag
 ```plain
 encryptCTF{L3t5_R4!53_7h3_J05H}
 ```

