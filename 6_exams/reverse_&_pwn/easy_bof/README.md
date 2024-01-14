@@ -1,6 +1,6 @@
-# Easy bof
+# easy bof
 
-### Description
+### 📍 Description
 This time, you cannot patch the binary and you 
 need to exploit a vulnerability in the code.
 
@@ -13,7 +13,7 @@ Try to use gdb and understand the behavior of the program
 
 Also here, flag in clear but please report every step in the write-up!
 
-## Solution
+## 🔑 Solution
 Considering the description, that gives us the dimensions of the buffer, we concur that we must perform a buffer overflow.
 
 We can see that the buffer is 16 char wide and that there's a `getFlag()` function that we might want to execute, so the return address of `main()` must be overwritten with the address of `getFlag()`.
@@ -30,7 +30,7 @@ p.sendline(b"A"*(16+24)+pwn.p64(elf.symbols["getFlag"]))
 p.interactive()
 ```
 
-### Flag
+### 🚩 Flag
 ```plain
 spritz{bof_for_fun_and_profit?}
 ```
