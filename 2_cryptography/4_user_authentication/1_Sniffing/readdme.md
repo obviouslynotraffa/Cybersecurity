@@ -1,4 +1,5 @@
-# Description
+# Sniffing
+### 📄 Description
 We sniffed a sensible http traffic.
 Can you identify the password?
 The attacked service is called bashNinja.
@@ -6,7 +7,7 @@ The attacked service is called bashNinja.
 
 Hint. Use Wireshark.
 
-## Solution
+## 🔑 Solution
 The hint suggest the usage of Wireshark.
 
 We first filter the packets by http (see the bar with "App a display filter").
@@ -19,7 +20,7 @@ By inspecting the "Hypertext transfer protocol", we can notice the Authorization
 field. Here it contains our flag inside the credentials:
 
 
-### Flag
+### 🚩 Flag
 ```plain
 bashNinja:flag{help-me-obiwan}
 ```
