@@ -1,4 +1,8 @@
-# Solution
+# Ajax not Borax
+### 📄 Description
+Can you retrieve the flag?
+
+## 🔑 Solution
 
 We can analize the code. We see that if we put some breakpoints on the check of the username we can get something: 
 
@@ -8,7 +12,7 @@ We see that is coded from md5, so we can use an online tool for decode it.
 
 If we do the same thing for the pass we'll have the flag:
 
-## Flag
+### 🚩 Flag
 ```plain
 flag{sd90J0dnLKJ1ls9HJed}
 ```

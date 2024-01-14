@@ -1,4 +1,6 @@
-# Description
+# Chall
+
+### 📄 Description
 Damn it, that stupid smart cat litter is broken again
 Now only the debug interface is available here and this stupid thing only permits one ping to be sent!
 I know my contract number is stored somewhere on that interface but I can't find it and this is the only available page! Please have a look and get this info for me!
@@ -10,7 +12,7 @@ We suggest to use "curl" for communicating with the host.
 Start the server with:
 docker-compose up
 
-## Solution
+## 🔑 Solution
 * after a couple tries it becomes obvious that the input is passed to a shell but is more or less sanitized
 * `%0a` (=> `\n`) isn't prohibited
 * ` ` (space) is tho
@@ -20,7 +22,7 @@ docker-compose up
 * we can't just `cat` it
 * after some quick googling we should be able to do `cat<./there/is/your/flag/or/maybe/not/what/do/you/think/really/please/tell/me/seriously/though/here/is/the/flag`
 
-## Flag
+### 🚩 Flag
 ```
 INS{warm_kitty_smelly_kitty_flush_flush_flush}
 ```
