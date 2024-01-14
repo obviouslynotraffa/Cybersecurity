@@ -1,0 +1,13 @@
+ Per ottenere la flag ho scritto nel file: AAAAA
+ e ho fatto i seguenti input:
+ leru()
+ leru()
+ leru()
+ ""
+ 
+ e ho ottentuo il messaggio: Flag reached: spritzCTF{python}
+ 
+ Ho inserito 3 volte leru() per eseguire la funzione leru() che incrementa di uno la variabile globale lvl1. Cosi' facendo lvl1+ = 3, e questo mi permettera' di passare la prima condizione nell'if per stampare la flag.
+ Nel file ho scritto AAAAA perche' poi la somma finale del valore ascii dei 5 caratteri (ovvero 65+65+65+65+65) sara' divisibile per la lunghezza della stringa (ovvero 5). Quersto settera' tmp a zero e quindi lvl2 a true.
+ Ora entrambe le condizioni sono soddisfatte e la flag viene stampata
+ 

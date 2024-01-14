@@ -1,0 +1,7 @@
+I used radare ,the command iz, to look for any useful strings in the program. I found some tip about how the flag was mirrored and i found it like that. 
+
+}803998_ekoPWOOOOOLS_ereh_yllaniF{ZTIRPS
+
+i mirrored it and i found the flag
+
+SPRITZ{Finally_here_SLOOOOOWPoke_899038}

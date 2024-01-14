@@ -1,0 +1,19 @@
+Eseguiamo una crittoanalisi del codice:
+-	Il primo pezzo concatena due pezzi di x, in particolare:
+o	Il primo blocco è dal secondo degli ultimi caratteri (-2) fino alla fine
+o	Il secondo blocco è dall’inizio fino al secondo degli ultimi caratteri (-2)
+-	Il secondo pezzo fa una join tra il carattere attuale e i%3; ciò significa che aggiungiamo ogni due caratteri
+-	Il terzo pezzo inverte la stringa iterando al contrario
+
+La cosa più semplice da fare è letteralmente invertire il codice; infatti, usando l’inversione diretta, avremo già la stringa con tutti gli indici in posizione e, iterando al contrario e prendendo ogni due caratteri, avremo esattamente, dato che il secondo pezzo esegue sempre la stessa cosa, la stringa di partenza. Infatti, usando:
+
+def dec(x):
+    x = ''.join([x[len(x) - i - 1] for i in range(len(x))])
+    x = ''.join([chr(ord(c) - (i % 3)) for i, c in enumerate(x)])
+    x = x[-2:] + x[:-2]
+    return x
+
+E poi con:
+print(dec(flag_cipher))
+
+Ecco la flag: ex1}spritzCTF{

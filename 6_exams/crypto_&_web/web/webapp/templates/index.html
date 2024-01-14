@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+	<head>
+		<title>First to the flag</title>
+	</head>
+	<body>
+		<center>
+			<h1>Ready Student One</h1>
+
+			<h2>Welcome to OASIS, a place where you can find whatever you need the most.</h2>
+			<img src="{{url_for('static', filename='oasis.jpg')}}" align="middle" width="300"  />  
+			<h3>From this immersive simulation you can ping every computer in the world.
+				Can you ping the right one?
+			</h3>
+
+			<form action="flag">
+				IP: <input type="text" name="ip"> 
+				Port: <input type="text" name="port">
+				<input type="submit">
+			</form>	
+
+			In this challenge you can see the main code: <a href="/source">source</a>
+			<br>
+			<br>
+			<img src="{{url_for('static', filename='Metaverso-Ready-Player-One.jpg')}}" align="middle" width="500"  />  
+		</center>
+	</body>
+</html>

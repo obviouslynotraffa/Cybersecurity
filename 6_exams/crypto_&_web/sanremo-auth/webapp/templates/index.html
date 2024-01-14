@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <link href="static/main.css" rel="stylesheet" type="text/css" media="all">
+	<title>Sanremo injection</title>
+</head>
+    <body>
+		<center>
+			<h1 style="text-align:center;">Sanremo audio</h1>
+
+			<img src="{{url_for('static', filename='festivaldisanremo.jpg')}}" align="middle" width="600" /> 
+
+			<h3  style="text-align:center;">
+				You have to sing a song for the Sanremo contest. You need to authenticate in order to get the right audio setting.
+			</h3>
+				<div class="box">
+					<h1>Log In</h1>
+					<form action="/" method="post">
+						<input type="text" name="username" id="username" placeholder="Username" required/>
+						<br>
+						<input type="password" name="password" id="password" placeholder="Password" required/>
+						<br>
+						<input type="submit" class="button" value="Log In"/>
+					</form>
+				</div>
+			
+			{%if nologin%}
+			<div class="nologin">
+				<h2 style="text-align:center;">NO AUDIO FOR YOU!</h2>
+
+				<img src="{{url_for('static', filename='blanco-fiori.jpg')}}" align="middle" width="600" /> 
+			</div>
+			{%endif%}
+		</center>
+	</body>
+</html>

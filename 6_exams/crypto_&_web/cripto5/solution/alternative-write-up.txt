@@ -1,0 +1,14 @@
+Eseguendo una crittoanalisi del codice, si nota che:
+-	Si controlla che msg possegga solo variabili di a
+-	Si trasforma msg in una lista
+-	Si itera per tutta la lunghezza del messaggio e:
+o	Si prende il valore corrente come carattere
+o	Lo si indicizza
+o	La parte vulnerabile è l’aggiunta di k, che viene usato come indice per recuperare il carattere crittato
+-	Si trova il messaggio crittato
+
+Letteralmente, per risolvere si può chiamare la funzione encrypt sottraendo k.
+ciphertext="XuywnEHYKbny~Bfx~tsqD~f~xnruqj~hnumjwd"
+print(decrypt(ciphertext, 5)) 
+In questo modo, spunta direttamente la flag:
+SptrizCTF{it_was_only_a_simple_cipher}

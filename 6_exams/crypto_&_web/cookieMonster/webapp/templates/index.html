@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+	<title>Cookie Monster</title>
+</head>
+<body>
+    <center> 
+        <h2>The cookie seems quite weird.</h2>
+        <h2>But we need to make the Cookie Monster happy! Otherwise it will be a mess.</h2>
+        <h2>Can you do it?</h2>
+        <form action="/" method="POST">  
+            <div class="container">   
+                <label>Username : </label>    </br>
+                <input type="text" placeholder="Enter Name" name="name" required>  </br></br>
+                <label>Password : </label>    </br>
+                <input type="password" placeholder="Enter Password" name="passwd" required>   </br></br>
+                <button type="submit">Get Biscuit</button>    </br></br>   
+            </div>   
+        </form>   
+
+        <img src="{{url_for('static', filename='cookie-monster-portrait.jpg')}}" align="middle" width="400"  />
+    </center>
+</body>
+

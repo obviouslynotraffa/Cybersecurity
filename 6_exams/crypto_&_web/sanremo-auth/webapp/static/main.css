@@ -1,0 +1,50 @@
+body,
+input,
+textarea,
+select {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  color: #4c4c4c;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 300;
+  color: #4c4c4c;
+  text-align: center;
+  padding-top: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.box h2{
+  text-align: center;
+  margin-top: 30px;
+}
+
+.box {
+  margin: 20px auto;
+  width: 310px; 
+  height: 260px; 
+  -webkit-border-radius: 8px/7px; 
+  -moz-border-radius: 8px/7px; 
+  border-radius: 8px/7px; 
+  background-color: white; 
+  -webkit-box-shadow: 1px 2px 5px grey; 
+  -moz-box-shadow: 1px 2px 5px grey; 
+  box-shadow: 1px 2px 5px grey; 
+  border: solid 1px grey;
+}
+
+.footer h4{
+  text-align: right;
+  margin-right: 30%;
+  margin-top: 30px;
+}
+
+
+input{
+  margin-top: 15px;
+  margin-left: 25%;
+  margin-right:25%;
+}

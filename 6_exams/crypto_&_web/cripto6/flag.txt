@@ -1,0 +1,1 @@
+SpritzCTF{you_hacked_me}

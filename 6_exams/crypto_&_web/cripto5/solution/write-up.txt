@@ -1,0 +1,6 @@
+Guardando attentamente la funzione encrypt debuggando, ho scoperto che l'unica parte importante avviene quando la funzione prende
+(idx_out = (idx_in + k) % len(a)) l'indice trovato nel dizionario usando il carattere del nostro messaggio, lo somma a un certo k e prende il resto di tale somma 
+per poi cercare la lettera con cui sostiuire il messaggio in testo criptato
+riutilizzando encrypt e modificando il + k con - k è facile decriptare il testo.
+Sapendo che la chiave è uguale a 5 si decripta facilmente trovando come flag : SptrizCTF{it_was_only_a_simple_cipher}
+

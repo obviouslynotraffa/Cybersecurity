@@ -1,0 +1,34 @@
+CRYPTO --> this-is-pain
+
+#flag spritz{shinra_tensei_everywhere}
+
+1)Letto il file cipertext noto che e' composto da Z e O
+2)Ho trasformato le Z con 0 e le O con 1
+2)Il risultato era in codice binario e l'ho convertito in caratteri
+3)Era codificato in base64 ed ho proceduto alla decodifica
+4)Era un file di testo a sostituzione, ho creato un dizionario per sostituire gli old char con i nuovi char
+5)Ed e' uscita la flag spritz{shinra_tensei_everywhere}
+
+funzione per il replace:
+    def replace_chars(input_string, char_dict):
+        result = ""
+        for char in input_string:
+            result += char_dict.get(char, char)
+        return result
+
+dizionario per cambiare Z in 0 e O in 1 :
+    dizionario={'Z':'0','O':'1'}
+
+bin to text:
+    for c in text:
+        decimal_value = int(c, 2)
+        character = chr(decimal_value)
+        message += character
+
+base64 to text:
+    base64Decode = base64.b64decode(message)
+
+
+dizionario per il replace finale:
+    dizionario_testo= {'B':'s','N':'p','O':'r','R':'i','T':'t','U':'z','A':'o','W':'m','Q':'h','K':'a','E':'w','Y':'e','G':'n','S':'k','P':'v','Z':'y','X':'f','V':'d','F':'u','C':'c','J':'l','I':'g','H':'b'}
+

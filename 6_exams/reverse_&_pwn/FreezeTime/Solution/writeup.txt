@@ -1,0 +1,5 @@
+I copied the original file and then cracked it so i could skip the check (PTRACE) so i could use my debugger gdb-peda by changing a jne into a je that was located inside a function called  "is_policeman_here". So now i can use my gdb peda to put a breakpoint before the flag is deleted by the program. I can then read it from the stack
+
+SPRITZ{Za_WaRuDo_348178}
+
+P.S. : OH YOU ARE APPROACHING ME JOTARO?

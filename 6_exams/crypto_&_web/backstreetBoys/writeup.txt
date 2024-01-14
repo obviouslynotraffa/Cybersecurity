@@ -1,0 +1,16 @@
+CRYPTO --> backstreet-boys
+
+#flag: spritz{i-want-it-that-way}
+
+1)Nella funzione di encrypt noto che aggiusta la chiave alla stessa lunghezza del testo e comincia a fare un ciclo "char a char"
+2)Controlla se i caratteri sono delle lettere o meno
+3)La parte fondamentale dell'esercizio e' questo:
+    chr((ord(char_plain) + ord(char_key) - 2 * offset)   % 26 + offset)
+  ed e' questo che bisogna capire per passare al decode
+
+4)Una volta capito il codice posso passare al decode, aggiusto la key come nell'encryption
+5)Controllo se i caratteri sono delle lettere se si:
+    5.1)Faccio un ciclo char a char ed invece di sommare il valore del tra l'encoded char e la chiave lo sottraggo
+    5.2)Dopodiche faccio la stessa procedura a con il %26+offset
+6)Se non e' una lettera invece non modifico nulla e lo aggiungo comunque alla stringa finale
+ 
