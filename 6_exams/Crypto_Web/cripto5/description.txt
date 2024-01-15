@@ -1,2 +1,0 @@
-you are given a ciphertext, and the code the attacker used to produce it.
-can you reverse the algorithm to find the plaintext?

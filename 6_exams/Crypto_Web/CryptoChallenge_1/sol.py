@@ -41,15 +41,13 @@ def decrypt(msg, k):
 
     return "".join(msg)
 
-    # plaintext = " unknown"
-    # cipher = encrypt(plaintext, 5)
 cipher = "XuywnEHYKbny~Bfx~tsqD~f~xnruqj~hnumjwd"
 print(decrypt(cipher, 5))
-"""
+
+
 for k in range(-10000, 10000):
     dec = decrypt(cipher, k)
     if "SPRITZ" in dec:
         print("chiave", k)
         print(dec)
         break
-"""
