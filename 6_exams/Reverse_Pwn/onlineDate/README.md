@@ -28,5 +28,5 @@ r.interactive()
 
 ### 🚩 Flag
 ```plain
-
+SPRITZ{Cr4zy_DuD3}
 ```

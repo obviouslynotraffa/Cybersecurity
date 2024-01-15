@@ -20,5 +20,5 @@ We cannot patch the binary, so we can just analyze the code using ida. Here's ar
 
 ### 🚩 Flag
 ```python
-
+SPRITZ{EasyBye<3}
 ```
