@@ -1,7 +1,0 @@
-Guardando il file students.py è possibile vedere che il programma prende in input qualsiasi stringa 
-e la esegue sul terminale senza effettuare dei controlli per consentire solo un "ping".
-Quindi è possibile concatenare altre istruzioni da eseguire sul terminale grazie al comando '|', controllando dove si trova la flag utilizzando come input,
-127.0.0.1 | ls
-si può trovare il file flag.txt, eseguendo 
-127.0.0.1 | cat flag.txt
-si trova la flag : SpritzCTF{you_hacked_me}
