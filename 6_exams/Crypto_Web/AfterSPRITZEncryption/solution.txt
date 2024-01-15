@@ -1,8 +1,0 @@
-L’algoritmo most_secure_encryption_of_the_world non fa assolutamente nulla; letteralmente, restituisce la stessa stringa di input, considerando che:
--	Prendo la lunghezza della chiave
--	Itero nel plain text
--	L’indice modulo lunghezza della chiave è sempre lo stesso
--	Ritorno il plain text
-Noto, banalmente, che serve inserire un campo password; prendendo il contenuto del file binario e inserendo la password “spritz” recupero la flag
-
-SPRITZ_CTF={encryption753451}
