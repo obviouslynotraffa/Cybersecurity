@@ -1,6 +1,6 @@
 # BB
 
-## Description
+### 📄 Description
 
 We retrieved an important message.
 However, we cannot understand the language used ...
@@ -10,10 +10,10 @@ In the writeup, explain carefully why and how we can break the algorithm.
 
 The flag is in spritzCTF{} format.
 
-## Solution
+## 🔑 Solution
 
 * `message.txt` looks again like random garbage so it's probably another XOR-based challenge.
-* The provided `students.py` confirms our idea.
+* The provided `challenge.py` confirms our idea.
 * It's just some fancy XOR-based algorithm using numpy.
 * The `mixer` function uses the `key` argument as a seed for numpy's rng.
 * We can exploit the fact that we know the flag format to automatically bruteforce the key.
@@ -22,7 +22,7 @@ The flag is in spritzCTF{} format.
 * By trying all the integers between 0 and 3500 we should be able to find the key if we are lucky (or maybe if we aren't unlucky)
 * The key came out to be `107`
 
-## Flag
+### 🚩 Flag
 
 ```plain
 spritzCTF{blusky}
