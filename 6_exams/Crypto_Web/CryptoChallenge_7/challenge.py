@@ -24,18 +24,21 @@ def encrypt(input, seed):
     input = "".join(input)
     return input
 
+###### Solution ######
+
+with open("secret.txt", "r") as f:
+    cipher = f.read()
+    f.close()
 
 def decrypt(input, seed):
+    input = list(input)
     random.seed(seed)
-    return reverse_transformation("".join(chr(ord(char) ^ random.randint(80, 120)) for char in input))
+    input = [chr(ord(x) ^ random.randint(80,120)) for x in input]
+    input = ''.join(input)
+    input = reverse_transformation(input)
+    return input
 
-
-with open("./secret.txt", "r") as file:
-    cipher = file.read()
-
-out = dict()
-for seed in range(1000):
-    decrypted = decrypt(cipher, seed)
-    if set(decrypted).issubset(set(string.ascii_letters + string.digits + "}{_")) and "spritz" in decrypted:
-        print(decrypted)
-        out[seed] = decrypted
+for i in range(1000):
+    plain = decrypt(cipher, i)
+    if "spritz" in plain:
+        print(i, plain)
