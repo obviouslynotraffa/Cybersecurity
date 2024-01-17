@@ -23,3 +23,8 @@ The idea behind it is determining the frequency of each letter in the ciphertext
 
 
 If we wanto, we can manually crack this challenge because we know the flag format so we know that `DMPXST` maps to `SPRITZ`, exploiting that we can manually crack a letter at a time (see `manual.py`)
+
+### 🚩 Flag
+```plain
+SPRITZ{CONGRATZ_U_FOUND_THE_ONE_PIECE!}
+```
