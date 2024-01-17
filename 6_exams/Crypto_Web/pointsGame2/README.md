@@ -1,4 +1,4 @@
-# Minigame
+# Points Game
 
 ### 📍 Description
 

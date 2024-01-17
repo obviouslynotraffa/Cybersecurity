@@ -1,4 +1,4 @@
-# Minigame
+# Points Game
 
 ### 📄 Description
 Provide the three input that allows you to reach the flag of the UNMODIFIED code.
