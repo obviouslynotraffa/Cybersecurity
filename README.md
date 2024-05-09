@@ -26,5 +26,5 @@ The course covers various topics:
     - PLT & GOT
     - ROP
 
-### ✨ Credits
-Some solutions (mainly exams) were taken from [Augusto Zanellato](https://github.com/augustozanellato/Cybersec2021/tree/master)
+### ✨ Contributions
+Any contributions to improve existing solutions or add solutions not yet provided are relly appreciated.
