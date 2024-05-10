@@ -27,4 +27,4 @@ The course covers various topics:
     - ROP
 
 ### ✨ Contributions
-Any contributions to improve existing solutions or add solutions not yet provided are relly appreciated.
+Any contributions to improve existing solutions or add solutions not yet provided are really appreciated.
