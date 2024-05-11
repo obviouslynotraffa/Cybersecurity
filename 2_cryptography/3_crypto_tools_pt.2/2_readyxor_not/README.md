@@ -8,7 +8,11 @@ encrypted flag: `I3gDKVh1Lh4EVyMDBFo=`
 
 The flag is a composition of two names (two animals (?)).
 
-## 🔑 Solution
+<details>
+    <summary>
+        <h2>🔑 Solution</h2>
+    </summary>
+
 ```python
 import base64
 
@@ -29,7 +33,9 @@ print(flag)
 
 ```
 
-### 🚩 Flag
+<h3> 🚩 Flag </h3>
+
 ```plain
 FLAG=Alpacaman
 ```
+</detials>

@@ -2,9 +2,13 @@
 ### 📄 Description
 Perfectly secure. That's for sure! Or can break it and reveal my secret?
 
-We are given a encryption script and the a file which is encrypted with it
+We are given a encryption script and the a file which is encrypted with it.
 
-## 🔑 Solution
+<details>
+    <summary>
+        <h2>🔑 Solution</h2>
+    </summary>
+
 ```python
 import random
 import sys
@@ -37,7 +41,9 @@ plain_text = ''.join([chr(m ^ k) for (m, k) in zip(secret[:-len(cur_time)], keys
 print(plain_text)
 ```
 
-### 🚩 Flag
+<h3> 🚩 Flag </h3>
+
 ```plain
 34C3_otp_top_pto_pot_tpo_opt_wh0_car3s
 ```
+</details>

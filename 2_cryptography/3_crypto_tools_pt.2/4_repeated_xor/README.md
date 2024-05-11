@@ -1,25 +1,29 @@
 # Repeated xor
 ### 📄 Description
-There's a secret passcode hidden in the robot's "history of cryptography" module. But it's encrypted! Here it is, hex-encoded: encrypted.txt. Can you find the hidden passcode?
+There's a secret passcode hidden in the robot's "history of cryptography" module. But it's encrypted! Here it is, hex-encoded: `encrypted.txt`. Can you find the hidden passcode?
 
 Hint:
 Like the title suggests, this is repeating-key XOR. You should try to find the length of the key - it's probably around 10 bytes long, maybe a little less or a little more.
 
-#Follow the following procedure:
+Follow the following procedure:
 
 STEP 1: Key length identification
 
-      #1.1 set the key length to test
-      #1.2 shift the secret string by key_length
-      #1.3 count the number of characters that are the same in the same position
-            between the original secret and its shifterd version
-      #1.4 take the highest frequency over different key length by repearing 1.1 - 1.3
+ 1. Set the key length to test;
+ 2. Shift the secret string by `key_length`;
+ 3. Count the number of characters that are the same in the same position
+    between the original secret and its shifterd version;
+ 4. Take the highest frequency over different key length by repearing 1 - 3.
 
 
-STEP 2. Cryptoanalysis
+STEP 2: Cryptoanalysis.
 
 
-## 🔑 Solution
+<details>
+    <summary>
+        <h2>🔑 Solution</h2>
+    </summary>
+
 ```python
 with open("encrypted.txt", 'r') as file:
     secret_hex = file.read()
@@ -72,7 +76,9 @@ for i, c in enumerate(secret):
 print(real_message)
 ```
 
-### 🚩 Flag
+<h3> 🚩 Flag </h3>
+
 ```plain
 8eb31c92334eac8f6dacfbaaa5e40294a31e66e0
 ```
+</details>

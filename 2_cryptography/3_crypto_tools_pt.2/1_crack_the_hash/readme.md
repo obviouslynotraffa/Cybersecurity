@@ -4,10 +4,14 @@ It’s happened again! Some of our beloved friends at linkedin.com forgot to sal
 
 Hash: `365d38c60c4e98ca5ca6dbc02d396e53`
 
-## 🔑 Sol
+<details>
+    <summary>
+        <h2>🔑 Solution</h2>
+    </summary>
 
 Use a md5 cracker online. The password is:
 
 ```plain
 password12345
 ```
+</details>
