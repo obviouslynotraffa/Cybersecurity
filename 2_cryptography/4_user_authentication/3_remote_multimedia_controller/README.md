@@ -10,7 +10,11 @@ crash.
 
 Help Caasi to find out what happened !
 
-## 🔑 Solution
+<details>
+    <summary>
+        <h2>🔑 Solution</h2>
+    </summary>
+
 ```python
 import base64
 
@@ -27,7 +31,9 @@ for i in range(1,11):
     secret = dec
 ```
 
-### 🚩 Flag
+<h3> 🚩 Flag </h3>
+
 ```plain
 INSA{TCP_s0ck3t_4n4lys1s_c4n_b3_fun!}
 ```
+</details>
