@@ -2,7 +2,11 @@
 ### 📄 Description
 Sherlock has a mystery in front of him. Help him to find the flag.
 
-## 🔑 Solution
+<details>
+    <summary>
+        <h2>🔑 Solution</h2>
+    </summary>
+
 ```python
 sol = ""
 
@@ -23,7 +27,10 @@ result=''.join(chr(int(sol[i*8:i*8+8],2)) for i in range(len(sol)//8))
 print(result)
 ```
 
-### 🚩 Flag
+<h3> 🚩 Flag </h3>
+
 ```plain
 BITSCTF{h1d3_1n_pl41n_5173}
 ```
+
+</details>
