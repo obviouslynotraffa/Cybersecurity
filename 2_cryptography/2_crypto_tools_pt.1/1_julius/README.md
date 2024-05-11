@@ -1,15 +1,19 @@
 # Julius
 ### 📄 Description
-Julius,Q2Flc2FyCg==
+Julius,`Q2Flc2FyCg==`
 
 World of Cryptography is like that Unsolved Rubik's Cube, given to a child that has no idea about it.
 A new combination at every turn.
 
 Can you solve this one, with weird name?
 
-ciphertext: fYZ7ipGIjFtsXpNLbHdPbXdaam1PS1c5lQ==
+ciphertext: `fYZ7ipGIjFtsXpNLbHdPbXdaam1PS1c5lQ==`
 
-## 🔑 Solution
+<details>
+    <summary>
+        <h2>🔑 Solution</h2>
+    </summary>
+
 ```python
 import base64
 
@@ -31,7 +35,9 @@ def brute_force_caesar(text):
 brute_force_caesar(decoded2)
 ```
 
-### 🚩 Flag
+<h3> 🚩 Flag </h3>
+
 ```plain
 ecCTF3T_7U_BRU73?!
 ```
+</details>

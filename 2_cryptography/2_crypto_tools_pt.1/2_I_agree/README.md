@@ -6,7 +6,11 @@ Your clue is:
 
 "caesar is everything. But he took it to the next level."
 
-## 🔑 Solution
+<details>
+    <summary>
+        <h2>🔑 Solution</h2>
+    </summary>
+
 ```python
 import base64
 
@@ -32,7 +36,9 @@ for i in range(len(cipher)):
 print(sol)
 ```
 
-### 🚩 Flag
+<h3> 🚩 Flag </h3>
+
 ```plain
 theforceisstrongwiththisone
 ```
+</details>
