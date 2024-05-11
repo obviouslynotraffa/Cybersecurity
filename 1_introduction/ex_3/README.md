@@ -1,12 +1,16 @@
-# Ex 3
+# Exercise 3
 ### 📄 Description
 
 Define a randomic password generator.
 The password should contain 10 characters.
 
-Type of characters: alphanumeric
+Type of characters: `alphanumeric`.
 
-## 🔑 Solution
+<details>
+    <summary>
+        <h2>🔑 Solution</h2>
+    </summary>
+
 ```python
 import random
 import string
@@ -22,3 +26,5 @@ for i in range(len):
 
 print(password)
 ```
+
+</details>

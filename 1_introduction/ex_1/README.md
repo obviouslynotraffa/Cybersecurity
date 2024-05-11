@@ -1,15 +1,19 @@
-# Ex 1
+# Exercise  1
 ### 📄 Description
 You are asked to define a Python code that, given a string,
 prints a string with all of the letters shifted by 2.
 
 For example:
 
-- input = 'abc'
+- `input` = 'abc'
 
-- output = 'cde'
+- `output` = 'cde'
 
-## 🔑 Solution
+<details>
+    <summary>
+        <h2>🔑 Solution</h2>
+    </summary>
+
 ```python
 input = 'abc'
 key = 2
@@ -20,3 +24,4 @@ for i in range(len(input)):
 
 print(output)
 ```
+</details>
