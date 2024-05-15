@@ -4,7 +4,7 @@ Comparing strings in assembly is an hard task for java n00bs.
 
 ### ⚙ How to run it
 ```bash
-./no_rop
+./java
 ```
 
 ### ⛔ Rules
