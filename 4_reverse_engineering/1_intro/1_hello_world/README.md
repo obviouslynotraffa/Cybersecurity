@@ -2,7 +2,7 @@
 ### 📄 Description
 Can you retrieve the flag?
 
-Run the challenge with:
+### ⚙ How to run it
 ```bash
 ./hello_world
 ```

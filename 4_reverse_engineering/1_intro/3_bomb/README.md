@@ -7,7 +7,7 @@ It has several security levels.
 This challenge is composed by 7 levels;
 however, we ask you to solve only the first four levels.
 
-Run the challenge with:
+### ⚙ How to run it
 ```bash
 ./bomb
 ```
