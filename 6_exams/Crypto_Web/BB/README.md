@@ -10,7 +10,11 @@ In the writeup, explain carefully why and how we can break the algorithm.
 
 The flag is in spritzCTF{} format.
 
-## 🔑 Solution
+
+<details>
+    <summary>
+        <h2>🔑 Solution</h2>
+    </summary>
 
 * `message.txt` looks again like random garbage so it's probably another XOR-based challenge.
 * The provided `challenge.py` confirms our idea.
@@ -22,8 +26,9 @@ The flag is in spritzCTF{} format.
 * By trying all the integers between 0 and 3500 we should be able to find the key if we are lucky (or maybe if we aren't unlucky)
 * The key came out to be `107`
 
-### 🚩 Flag
+<h3> 🚩 Flag </h3>
 
 ```plain
 spritzCTF{blusky}
 ```
+</details>

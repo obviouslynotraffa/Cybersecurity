@@ -2,22 +2,20 @@
 
 ### 📄 Description
 
-IN THIS CHALLENGE YOU CANNOT LOOK AT THE webapp FOLDER!
-
 In order to get the points of this challenge, you need to provide a 
 detailed description of the procedure that you used to get the flag.
 Otherwise we account for the flag as read by the web application folder itself.
 
-### 🔧 How to run
+### ⚙ How to run it
 
-In order to run the challenge you need to set up two environmental variables
+In order to run the challenge you need to set up two environmental variables:
 
 ```console
 $export FLASK_ENV=development
 $export FLASK_APP=app
 ```
 
-and run the local server with
+and run the local server with:
 
 ```console
 $cd webapp
@@ -29,7 +27,14 @@ If you can't find it, it should be at http://127.0.0.1:5000/
 
 The descriprion of the challenge itself is on the webpage.
 
-## 🔑 Solution
+### ⛔ Rules
+Don't open the `webapp` folder.
+
+<details>
+    <summary>
+        <h2>🔑 Solution</h2>
+    </summary>
+
 1. As the challenge hints, you need to do a (fake) login, but it requires a specific cookie
 (hinted by the biscuit request) in order to get the flag
 
@@ -53,7 +58,9 @@ the next step with a random username and password
 
 7. We can use test/test as login, setting the cookie to admin and we get the flag
 
-### 🚩 Flag
+<h3> 🚩 Flag </h3>
+
 ```plain
 spritz{N3zuk0-cha4a4a4a4a4a4a4a4an}
 ```
+</details>

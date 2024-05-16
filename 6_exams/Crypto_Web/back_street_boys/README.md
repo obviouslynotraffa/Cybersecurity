@@ -5,8 +5,14 @@ Please recover it, we know the encryption algorithm!
 
 Tell me why!
 
-## 🔑 Solution
-What we need to do is basically a function that decode a Vigenère cipher
+
+<details>
+    <summary>
+        <h2>🔑 Solution</h2>
+    </summary>
+
+What we need to do is basically a function that decode a Vigenère cipher:
+
 ```python
 def decryption(key,encoded):
     decryptedText=''
@@ -24,7 +30,9 @@ def decryption(key,encoded):
     return decryptedText
 ```
 
-### 🚩 Flag
+<h3> 🚩 Flag </h3>
+
 ```plain
 spritz{i-want-it-that-way}
 ```
+</details>
