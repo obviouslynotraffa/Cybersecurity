@@ -2,10 +2,15 @@
 
 ### 📄 Description
 You are given a ciphertext, and the code the attacker used to produce it.
-can you reverse the algorithm to find the plaintext?
+
+Can you reverse the algorithm to find the plaintext?
 
 
-## 🔑 Solution
+<details>
+    <summary>
+        <h2>🔑 Solution</h2>
+    </summary>
+
 By performing a cryptanalysis of the code, it is observed that:
 
 - It is checked that `msg` contains only variables of type `a`
@@ -43,7 +48,9 @@ for k in range(-10000, 10000):
         break
 ```
 
-### 🚩 Flag
+<h3> 🚩 Flag </h3>
+
 ```plain
 SptrizCTF{it_was_only_a_simple_cipher}
 ```
+</details>

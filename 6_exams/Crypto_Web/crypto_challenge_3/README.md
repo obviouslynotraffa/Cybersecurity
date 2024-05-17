@@ -10,7 +10,11 @@ message = dec(enc(message))
 Then, you can obtain the flag by printing the outcome of dec(flag_cipher)
 
 
-## 🔑 Solution
+<details>
+    <summary>
+        <h2>🔑 Solution</h2>
+    </summary>
+
 Let's perform a cryptanalysis of the code:
 
 - The first part concatenates two portions of x, specifically:
@@ -31,7 +35,9 @@ def dec(x):
 
 We can get the flag
 
-### 🚩 Flag
+<h3> 🚩 Flag </h3>
+
 ```plain
 spritzCTF{ex1}
 ```
+</details>

@@ -13,7 +13,11 @@ In order to read it, you need to perform the encrypting operation in reverse.
 
 Good luck!
 
-## 🔑 Solution
+<details>
+    <summary>
+        <h2>🔑 Solution</h2>
+    </summary>
+
 
 We just need to perform the encrypting operation in reverse, so:
 1. Transform the Base64 with a Rotation Cipher of 13 positions
@@ -32,7 +36,9 @@ def ROTdecode(message, pos):
 ```
 
 
-### 🚩 Flag
+<h3> 🚩 Flag </h3>
+
 ```plain
 spritz{another_useless_encryption}
 ```
+</details>
