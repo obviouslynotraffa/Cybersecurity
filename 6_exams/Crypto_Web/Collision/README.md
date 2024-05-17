@@ -9,7 +9,12 @@ We do not accept brute-forces approaches.
 
 N.B. The solution that you provide must work with the unmodified version.
 
-## 🔑 Solution
+
+<details>
+    <summary>
+        <h2>🔑 Solution</h2>
+    </summary>
+
 We can notice that the algorithm is composed of:
 
    - An XOR function that sets a random seed and performs XOR between the x-th character of the text and a random number between 0 and 10.
@@ -24,7 +29,9 @@ Changing the `XOR` function by inserting the seed results in the same text; in f
 It can be noted that by inputting the number 10016 in the decrypt call, the algorithm returns the correct flag
 
 
-### 🚩 Flag
+<h3> 🚩 Flag </h3>
+
 ```python
 SPRITZ_CTF={hash_collisions0713u5}
 ```
+</details>
