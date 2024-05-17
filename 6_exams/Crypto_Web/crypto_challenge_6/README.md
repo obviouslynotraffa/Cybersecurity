@@ -10,7 +10,11 @@ the mixer function to encrypt it.
 
 The flag is in spritzCTF{} format.
 
-## 🔑 Solution
+<details>
+    <summary>
+        <h2>🔑 Solution</h2>
+    </summary>
+
 Performing a cryptographic analysis of the code:
 
 - We have a function `keygen()` that generates a random key of order 1 between 0 and a very large number; it is used to create a gigantic number but only increases the complexity of the file.
@@ -26,7 +30,9 @@ for k in range(5000):
 ```
 
 
-### 🚩 Flag
+<h3> 🚩 Flag </h3>
+
 ```plain
 spritzCTF{breaking_bad}
 ```
+</details>
