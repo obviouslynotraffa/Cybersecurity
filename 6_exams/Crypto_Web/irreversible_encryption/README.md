@@ -8,7 +8,11 @@ problems!
 Can you find a way to reverse the operation?
 
 
-## 🔑 Solution
+<details>
+    <summary>
+        <h2>🔑 Solution</h2>
+    </summary>
+
 We just need to invert the operations used to encrypt the key. We can use the same functions, but call them in inverse order
 
 ```python
@@ -24,7 +28,9 @@ for _ in range(15):
     decoded = base64encode(decoded)
 ```
 
-### 🚩 Flag
+<h3> 🚩 Flag </h3>
+
 ```plain
 spritz{But_wait_R3versible_OP3rations_are_B4D}
 ```
+</details>
