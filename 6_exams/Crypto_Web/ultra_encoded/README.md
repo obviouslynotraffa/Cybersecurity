@@ -4,11 +4,16 @@
 
 We retrieved an important message.
 However, we cannot understand the language used ...
-can you help us?
+
+
+Can you help us?
 
 The flag is in spritzCTF{} format.
 
-## 🔑 Solution
+<details>
+    <summary>
+        <h2>🔑 Solution</h2>
+    </summary>
 
 * The provided `secret.txt` looks like it's just something encoded in base64
 * The decoded contents look like they're in base64 too
@@ -20,8 +25,9 @@ for _ in range(15):
 print(decoded)
 ```
 
-### 🚩 Flag
+<h3> 🚩 Flag </h3>
 
 ```plain
 spritzCTF{ultraencoded}
 ```
+</details>
