@@ -1,4 +1,4 @@
-# Sanremo Authentication
+# Ready Student One
 ### 📄 Rules
 In this challenge you `CANNOT` look at the `webapp` folder!
 
@@ -24,33 +24,20 @@ If you can't find it, it should be at: http://127.0.0.1:5000/
 The descriprion of the challenge itself is on the webpage.
 
 ### ⛔ Rules
-You can't open the `webapp` folder.
-
+Don't look at the `webapp` folder.
 
 <details>
     <summary>
         <h2>🔑 Solution</h2>
     </summary>
 
-As we can see from the webpage's tab, we can try with an SQL injection. 
+Looking at the source code, we can see that by entering any port and a non-null IP, it takes us to a page where it says: "You choose IP d, but only `192.168.253.254` will receive the key." 
 
-We can put anything as `username`, and for the `password`:
-```plaintext
-' OR 1=1 --
-```
-So, if the query were something like this
-```sql
-SELECT id, username FROM users WHERE username='user' AND password='password'
-```
-the resulting query would be 
-``` sql
-SELECT id, username FROM users WHERE username='user' AND password='' OR 1=1 --
-```
-The `--` comments out everything that follows on the same line, making the query effective. Since 1=1 is always true, the condition `OR 1=1` will always return `TRUE`, and thus the query will return the user with the username `user` regardless of the password.
+That is clearly an IP address, so we can put it in the IP box and we will get the flag at the designated IP/port.
 
 <h3> 🚩 Flag </h3>
 
 ```plaintext
-spritz{Bl4nc0_m4dness}
+spritz{f1rst_to_the_key_f1rst_t0_th3_flag!}
 ```
 </details>
