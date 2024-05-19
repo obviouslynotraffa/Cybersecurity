@@ -21,9 +21,9 @@ Can you get accepted to the Eden's College?
 
 For the first question, we can see with ida that the correct input is: `Anya Forger, Park Avenue 128`. 
 
-The second and the third question is asked to enter a digit from 0 to 9, where the correct answer is always different. This result, is decided in `think()` function, that use a `rand()` to generate random numbers. What we can do is `nop` the piece of code where the `seed` of the `rand()` is set (so nop the `srand()`), in this way the `rand()` function return always the same value each time we start the program. So, what we can do is a brute force approach, manually trying each number. Once the dish or video number is found, it will remain fixed even after restarting the program. Worst case scenario, you have to try 20 times.
+The second and the third question is asked to enter a digit from 0 to 9, where the correct answer is always different. This result, is decided in `think()` function, that use a `rand()` to generate random numbers. What we can do replace the rand() function, with a register, where the value stored is fixed. In this way, the number that the function `think()` returns is always the same: 1.
 
-With this patch, see `collegeAdmission_patched`, the numbers were 3 - 6 .
+Check out the `patch.diff` file.
 
 Before we do that, there's the anti debugger thar will check if we are patching the code or using a debugger. Since we need to disable it, we can just `nop` the call of `stack trace` in the function `security_check()`.
 
