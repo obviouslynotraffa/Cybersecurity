@@ -1,14 +1,22 @@
 # SaveTheWorld
 
-### 📍 Description
+### 📄 Description
 
 We need your help to save the world. The selected fighter is too weak, do you have something to say about it?
 
-### 📄 Rules
+### ⚙ How to run
+```bash
+./SaveTheWorld
+```
+
+### ⛔ Rules
 - You cannot patch this binary. 
 - Do not modify auxil1 and auxil2
 
-## 🔑 Solution
+<details>
+    <summary>
+        <h2>🔑 Solution</h2>
+    </summary>
 
 We have a trivial buffer overflow vulnerability, we just need to overwrite some stack variables with the correct values.
 The input length isn't checked due to the use of `gets()` for handling user input, the target buffer is 72 bytes long, its content aren't checked against anything so we can just fill it with `A`s.
@@ -24,8 +32,9 @@ p.recvuntil(b"Congratulation, you won!!!")
 os.system("grep .*{.*}.* victory_recap.txt")
 ```
 
-### 🚩 Flag
+<h3> 🚩 Flag </h3>
 
 ```plain
 SPRITZ{Yare_Yare}
 ```
+</details>
