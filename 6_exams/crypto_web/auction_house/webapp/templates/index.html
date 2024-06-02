@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <link href="static/main.css" rel="stylesheet" type="text/css" media="all">
+	<title>Berlino injection</title>
+</head>
+    <body>
+		<center>
+			<h1 style="text-align:center;">Berlino needs a new member for the gang!</h1>
+
+			<img src="{{url_for('static', filename='berlino.jpg')}}" align="middle" width="600" /> 
+
+			<h3  style="text-align:center;">
+				Help Berlino infiltrate the auction house's system by injecting your structured interrogation expression.
+			</h3>
+				<div class="box">
+					<h1>Log In</h1>
+					<form action="/" method="post">
+						<input type="text" name="username" id="username" placeholder="Username" required/>
+						<br>
+						<input type="password" name="password" id="password" placeholder="Password" required/>
+						<br>
+						<input type="submit" class="button" value="Log In"/>
+					</form>
+				</div>
+			
+			{%if nologin%}
+			<div class="nologin">
+				<h2 style="text-align:center;">NO JEWELS FOR YOU!</h2>
+			</div>
+			{%endif%}
+		</center>
+	</body>
+</html>
