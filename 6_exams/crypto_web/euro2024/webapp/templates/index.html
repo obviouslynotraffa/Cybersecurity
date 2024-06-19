@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <link href="static/main.css" rel="stylesheet" type="text/css" media="all">
+	<title>Euro2024 breach</title>
+</head>
+<style>
+    html, body {
+        height: 100%; 
+        margin: 0; 
+        padding: 0;
+    }
+        body {
+        
+            background-image: url('static/euro.jpg');
+            background-size:cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .text-block {
+                background: rgba(255, 255, 255, 0.7); 
+                margin: 10px 0; 
+                padding: 20px;
+                border-radius: 10px;
+                width: 30%; 
+                text-align: center; 
+            }
+</style>          
+    <body>
+		<center>
+			<div class="text-block">
+                <h2>Attention! EURO 2024 Breach Detected!</h2>
+            </div>
+            <div class="text-block">
+                <p>Your objective is to <strong>regain access</strong> of the European football tournament 2024 database, where critical match information has been altered by an unauthorized breach. The system is in chaos and demands the expertise of a skilled hacker to restore the correct data.</p>
+            </div>
+            <div class="text-block">
+                <h2>Will you rise to the challenge?</h2>
+            </div>
+				<div class="box">
+					<h1>Log In</h1>
+					<form action="/" method="post">
+						<input type="text" name="username" id="username" placeholder="Username" required/>
+						<br>
+						<input type="password" name="password" id="password" placeholder="Password" required/>
+						<br>
+						<input type="submit" class="button" value="Log In"/>
+					</form>
+				</div>
+			
+			{%if nologin%}
+			<div class="nologin">
+				<h2 style="text-align:center;color:red">ACCESS DENIED!</h2>
+			</div>
+			{%endif%}
+		</center>
+	</body>
+</html>
