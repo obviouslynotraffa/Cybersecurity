@@ -8,36 +8,3 @@ A new combination at every turn.
 Can you solve this one, with weird name?
 
 ciphertext: `fYZ7ipGIjFtsXpNLbHdPbXdaam1PS1c5lQ==`
-
-<details>
-    <summary>
-        <h2>🔑 Solution</h2>
-    </summary>
-
-```python
-import base64
-
-def base64tostring(text):
-    return base64.b64decode(text).decode('utf-8', errors="ignore")
-
-enc64 = 'Q2Flc2FyCg=='
-decoded = base64tostring(enc64)
-
-puzzle = 'fYZ7ipGIjFtsXpNLbHdPbXdaam1PS1c5lQ=='
-
-decoded2 = base64tostring(puzzle)
-
-def brute_force_caesar(text):
-    for i in range(-30,30):
-        sol = ''.join([chr(ord(c) + i) for c in text])
-        print(sol)
-
-brute_force_caesar(decoded2)
-```
-
-<h3> 🚩 Flag </h3>
-
-```plain
-ecCTF3T_7U_BRU73?!
-```
-</details>

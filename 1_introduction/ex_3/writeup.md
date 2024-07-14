@@ -1,4 +1,5 @@
-# 🔑 Solution
+# 🔑 Write-Up
+
 ```python
 import random
 import string

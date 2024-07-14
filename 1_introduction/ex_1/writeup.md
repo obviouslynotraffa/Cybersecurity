@@ -1,4 +1,4 @@
-# 🔑 Solution
+# 🔑 Write-Up
 
 ```python
 input = 'abc'
