@@ -9,19 +9,3 @@ Can you help him?
 ```bash
 ./funmail2.0
 ```
-<details>
-    <summary>
-        <h2>🔑 Solution</h2>
-    </summary>
-    
-What we can do is change the destination of one of the calls to the `showEmails()` function.
-
-
-See the `patch.diff` file.
-
-<h3> 🚩 Flag </h3>
-
-```plaine
-TUCTF{l0c4l_<_r3m073_3x3cu710n}
-```
-</details>

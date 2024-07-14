@@ -8,20 +8,3 @@ And no snooping around his emails you hear.
 ```bash
 ./funmail
 ```
-
-<details>
-    <summary>
-        <h2>🔑 Solution</h2>
-    </summary>
-Using ida, we can see all the input the console requires:
-- username: `john galt`
-- password: `this-password-is-a-secret-to-everyone`
-
-and we can easly obtain the flag.
-
-<h3> 🚩 Flag </h3>
-
-```plaine
-TUCTF{d0n7_h4rdc0d3_p455w0rd5}
-```
-</details>
