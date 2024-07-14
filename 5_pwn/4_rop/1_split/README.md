@@ -9,18 +9,3 @@ I'll let you in on a secret; a useful string `/bin/cat flag.txt` is present in t
 
 ### ⛔ Rules
 Don't open the `flag.txt` file.
-
-<details>
-    <summary>
-        <h2>🔑 Solution</h2>
-    </summary>
-
-Luckily `pwntools` lib does all the hard work for us, we just need to overflow the stack up to the point where the `pwnme` return address is stored. We just need to call system with the address of the `usefulString` as an argument.
-
-
-<h3> 🚩 Flag </h3>
-
-```plain
-ROPE{a_placeholder_32byte_flag!}
-```
-</details>
