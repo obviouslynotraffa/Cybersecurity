@@ -1,5 +1,5 @@
 # Cybersecurity 
-Exercises & exams of the BSc course of `Cybersecurity: Principles and Practices` held in 2023 @ UNIPD
+Exercises & exams of the BSc course of `Cybersecurity: Principles and Practices` held in @ UNIPD
 
 ### 💻 Exercise format
 Each challenge is in `CTF` (capture the flag) format, in which you will have to solve the exercises using tools and knowledge given in the lesson, or found online. Only when the exercise is solved, you'll be able to obtain the flag.
