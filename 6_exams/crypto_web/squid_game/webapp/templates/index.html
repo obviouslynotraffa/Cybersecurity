@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+	<title>Squid Game</title>
+</head>
+<style>
+
+html, body {
+  height: 100%; 
+  margin: 0; 
+  padding: 0;
+}
+    body {
+     
+      background-image: url('static/bg.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .text-block {
+		  background: rgba(255, 255, 255, 0.7); 
+		  margin: 10px 0; 
+		  padding: 20px;
+		  border-radius: 10px;
+		  width: 30%; 
+		  text-align: center; 
+		}
+    </style>
+<body>
+    <center> 
+        <div class="text-block">
+            <h2>Dear player, you've entered the Squid Game, escaping the deadly challenges ahead!</h2>
+        </div>
+        <div class="text-block">
+            <p>Your objective is to <strong>crack</strong> the vault of secrets, where the ultimate prize awaits. The gatekeeper demands the perfect dalgona biscuits as a token of intelligence and precision. Have you mastered the art of the biscuits to <strong>unlock</strong> the mysteries and claim victory?</p>
+        </div>
+        <div class="text-block">
+            <h2>Will you rise to the challenge?</h2>
+        </div>
+        <form action="/" method="POST">  
+            <div class="container">   
+                <label>Username : </label>    </br>
+                <input type="text" placeholder="Enter Name" name="name" required>  </br></br>
+                <label>Password : </label>    </br>
+                <input type="password" placeholder="Enter Password" name="passwd" required>   </br></br>
+                <button type="submit">Get Biscuit</button>    </br></br>   
+            </div>   
+        </form>   
+
+
+
+
+        <img src="{{url_for('static', filename='logo.png')}}" style="margin-top: 200px;"align="bottom" width="1000"  />
+       
+    </center>
+</body>
+
