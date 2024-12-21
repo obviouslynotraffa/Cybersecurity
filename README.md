@@ -1,8 +1,15 @@
 # Cybersecurity 
-Exercises & exams of the BSc course of `Cybersecurity: Principles and Practices` held in 2023 @ UNIPD
+Exercises & exams of the BSc course of `Cybersecurity: Principles and Practices` @ UNIPD.
+
 
 ### 💻 Exercise format
 Each challenge is in `CTF` (capture the flag) format, in which you will have to solve the exercises using tools and knowledge given in the lesson, or found online. Only when the exercise is solved, you'll be able to obtain the flag.
+
+
+### ✨ Contributions
+I am no longer following the course, so some challenges might be missing.
+Feel free to open pull requests to add challenges and solutions, helping to keep the repository updated for those who will use it in the future.
+
 
 ### 📚 Topics
 The course covers various topics:
@@ -25,6 +32,3 @@ The course covers various topics:
     - Shellcode
     - PLT & GOT
     - ROP
-
-### ✨ Contributions
-Any contributions to improve existing solutions or add solutions not yet provided are really appreciated.
