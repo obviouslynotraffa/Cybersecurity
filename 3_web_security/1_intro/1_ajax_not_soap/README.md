@@ -1,4 +1,5 @@
 # Ajax not soap
+
 ### 📄 Description
 Javascript is checking the login password off of an ajax call, the verification is being done on the client side.
 Making a direct call to the ajax page will return the expected password.
