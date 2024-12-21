@@ -1,4 +1,5 @@
 # Valley of Fear
+
 ### 📄 Description
 The hard drive may be corrupted, but you were able to recover a small chunk of text (see `book.txt`).
 Scribbled on the back of the hard drive is a set of mysterious numbers. 

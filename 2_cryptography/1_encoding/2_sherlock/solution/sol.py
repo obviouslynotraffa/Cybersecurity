@@ -1,7 +1,7 @@
 
 sol = ""
 
-with open("challenge.txt","r") as f:
+with open("../challenge.txt","r") as f:
 
     while 1:
         char = f.read(1)

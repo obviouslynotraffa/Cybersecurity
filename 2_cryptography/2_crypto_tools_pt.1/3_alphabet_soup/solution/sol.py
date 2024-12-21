@@ -1,6 +1,6 @@
 from collections import Counter
 
-with open('encrpyted.txt') as file:
+with open('../encrpyted.txt') as file:
     data = file.read()
     
 

@@ -1,4 +1,5 @@
 # Exercise 3
+
 ### 📄 Description
 
 Define a randomic password generator.

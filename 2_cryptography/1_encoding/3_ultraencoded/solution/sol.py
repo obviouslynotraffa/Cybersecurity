@@ -1,5 +1,5 @@
 #open the file
-with open('zero_one.txt', 'r') as file:
+with open('../zero_one.txt', 'r') as file:
     input = file.read()
 
 #print(input)

@@ -1,4 +1,5 @@
 # Exercise 2
+
 ### 📄 Description
 
 Define a simple calculator.

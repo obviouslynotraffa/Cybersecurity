@@ -3,7 +3,7 @@ import re
 keys = [(1, 9, 4), (4, 2, 8), (4, 8, 3), (7, 1, 5), (8, 10, 1)]
 flag = None
 
-with open("book.txt", "r") as book:
+with open("../book.txt", "r") as book:
     contents = book.read()
     paragraphs = [paragraph.split("\n") for paragraph in contents.split("\n\n")]
     words = list(

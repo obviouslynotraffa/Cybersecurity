@@ -4,7 +4,7 @@
 #the file is in hex encoded, it could be good to bring it in a proper form
 #we know that FF is 256, i.e., we can represent the text in a decimal format,
 #where each number can be encoded in ascii
-with open("encrypted.txt", 'r') as file:
+with open("../encrypted.txt", 'r') as file:
     secret_hex = file.read()
 
 def hex2dec(text):

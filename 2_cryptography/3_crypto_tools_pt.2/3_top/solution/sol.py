@@ -47,7 +47,7 @@ c = [m ^ k for (m,k ) in zip(msg + cur_time, key + [0x88]*len(cur_time))]
 #we can use the xor property to retrieve the cur_time of the execution
 
 #read the secret
-with open("top_secret", "rb") as f:
+with open("../top_secret", "rb") as f:
     secret = f.read()
 print(len(secret))
 
