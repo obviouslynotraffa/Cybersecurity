@@ -1,6 +1,6 @@
 from pwn import *  
 
-context.binary = "./NeedsToBeHappy"
+context.binary = "../NeedsToBeHappy"
 e: ELF = context.binary 
 p = process()
 p.sendline(b"y")
