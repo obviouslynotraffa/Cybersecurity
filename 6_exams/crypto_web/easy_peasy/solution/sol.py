@@ -9,7 +9,7 @@ def binary_to_ascii(binary_string):
     return message
     
 
-with open("secret.txt", "r") as file:
+with open("../secret.txt", "r") as file:
     secret = file.read()
     file.close()
 

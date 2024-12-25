@@ -1,4 +1,4 @@
-with open("ciphertext.txt", "r") as ciphertext_file:
+with open("../ciphertext.txt", "r") as ciphertext_file:
     ciphertext = ciphertext_file.read().lower()
 
 trans = str.maketrans(

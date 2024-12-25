@@ -41,7 +41,7 @@ def calculate_frequencies(text: str) -> dict[str, float]:
     return {k: v / count * 100 for k, v in letter_count.items()}
 
 
-with open("challenge.txt", "r") as ciphertext_file:
+with open("../challenge.txt", "r") as ciphertext_file:
     ciphertext = ciphertext_file.read().lower()
 
 actual_freqs = calculate_frequencies(ciphertext)

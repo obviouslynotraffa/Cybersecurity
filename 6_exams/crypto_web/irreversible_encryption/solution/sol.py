@@ -40,7 +40,7 @@ def ascii_to_hex(message):
     encoded = binascii.hexlify(message).decode()
     return encoded
 
-with open("encrypted_flag.txt", "r") as f:
+with open("../encrypted_flag.txt", "r") as f:
     hex_encrypted=f.read()
     f.close()
     

@@ -1,5 +1,5 @@
 # read the secret
-with open("secret.txt", "r") as file:
+with open("../secret.txt", "r") as file:
     challenge = file.read()
     file.close()
 

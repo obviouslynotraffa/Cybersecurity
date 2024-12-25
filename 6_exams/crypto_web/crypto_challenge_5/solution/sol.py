@@ -16,7 +16,7 @@ def XORdecode(message, KEY="Hug0"):
     xored = ''.join([chr(ord(a) ^ ord(b)) for a,b in zip(message, key)])
     return xored
 
-with open('encrypted_flag', 'rb') as f:
+with open('../encrypted_flag', 'rb') as f:
     encrypted_flag = f.read().decode('ascii')
     f.close()
     

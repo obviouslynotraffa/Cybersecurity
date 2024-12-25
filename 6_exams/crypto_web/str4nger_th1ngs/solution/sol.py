@@ -40,7 +40,7 @@ def numbers_to_letters(numbers):
     return ''.join(letters)
 
 
-with open("cyphertext.txt") as f:
+with open("../cyphertext.txt") as f:
     cipher = f.readlines()
     f.close()
 

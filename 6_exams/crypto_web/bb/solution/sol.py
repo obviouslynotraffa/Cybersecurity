@@ -16,7 +16,7 @@ def mixer(message, key):
 
 ###### Solution #############
 
-with open("message.txt", "r") as file:
+with open("../message.txt", "r") as file:
     cipher = file.read()
 
 for k in range(3500):

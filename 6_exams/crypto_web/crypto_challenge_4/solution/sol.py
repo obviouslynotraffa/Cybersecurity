@@ -16,7 +16,7 @@ def ROTdecode(message, pos):
 def base64decode(cipher):
     return base64.b64decode(cipher).decode('ascii', errors="ignore")
 
-with open('encrypted_flag.txt', 'r') as f:
+with open('../encrypted_flag.txt', 'r') as f:
     encrypted_message=f.read()
     f.close()
 

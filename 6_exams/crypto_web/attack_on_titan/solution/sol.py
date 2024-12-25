@@ -15,7 +15,7 @@ def mixer(message, x1, x2, x3):
 
 ####### Solution ############
 
-with open("message.txt", "r") as file:
+with open("../message.txt", "r") as file:
     cipher = file.read()
 for x in range(128):
     decoded = mixer(cipher, x, x + 731, 731 + 731)
